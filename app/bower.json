@@ -1,6 +1,6 @@
 {
   "name": "Starter",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "authors": [
     "Egorov Slava <slava.egorov@gmail.com>"
   ],
@@ -14,13 +14,11 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "bower_components"
   ],
   "dependencies": {
     "bootstrap": "3.*",
-    "font-awesome": "~4.4.0",
+    "font-awesome": "4.*",
     "jquery": "2.*"
   }
 }
