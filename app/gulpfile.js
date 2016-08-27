@@ -154,24 +154,6 @@ gulp.task('sprite:prod', function () {
     return spriteData.pipe(gulp.dest(path.prod.icons));
 });
 
-gulp.task('dev', [
-    'html:build',
-    'js:build',
-    'style:build',
-    'fonts:build',
-    'sprite:build',
-    'image:build'
-]);
-
-gulp.task('prod', [
-    'html:prod',
-    'js:prod',
-    'style:prod',
-    'fonts:prod',
-    'sprite:prod',
-    'image:prod'
-]);
-
 gulp.task('watch', function(){
     gulp.watch([path.watch.html], function(event, cb) {
         gulp.start('html:build');
@@ -208,6 +190,24 @@ gulp.task('webserver', function() {
         livereload: true
     });
 });
+
+gulp.task('dev', [
+    'html:build',
+    'js:build',
+    'style:build',
+    'fonts:build',
+    'sprite:build',
+    'image:build'
+]);
+
+gulp.task('prod', [
+    'html:prod',
+    'js:prod',
+    'style:prod',
+    'fonts:prod',
+    'sprite:prod',
+    'image:prod'
+]);
 
 gulp.task('default', ['dev', 'webserver', 'watch']);
 gulp.task('open', ['dev', 'webserver', 'watch', 'openbrowser']);
