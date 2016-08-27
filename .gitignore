@@ -1,4 +1,5 @@
 /app/bower_components
 /app/node_modules
 /app/build
+/app/production
 .idea
